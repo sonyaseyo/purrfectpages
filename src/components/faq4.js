@@ -97,7 +97,7 @@ FAQ4.defaultProps = {
     "You can update your payment information by logging into your account and navigating to the 'Billing' or 'Payment' section.",
   faq10Answer:
     'Our website is suitable for readers of all ages. However, parental guidance is recommended for younger readers.',
-  content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+  content2: 'Feel free to contact our team if you have any questions left. ',
   faq2Answer:
     'No, the books are not available for download. You can read them directly on our website.',
   faq5Question: 'I forgot my password. What should I do?',
