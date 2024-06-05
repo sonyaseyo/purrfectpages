@@ -1,37 +1,34 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { Redirect } from 'react-router-dom'; // Імпортуємо Redirect
 import Navbar4 from '../components/navbar4';
 import ContactForm71 from '../components/contact-form71';
 import Footer15 from '../components/footer15';
+import axios from 'axios';
+
 import './sign-in.css';
 
 const SignIn = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [redirectToWelcome, setRedirectToWelcome] = useState(false); // Стан для редіректу
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Зупиняємо стандартну поведінку форми, щоб уникнути перезавантаження сторінки
+    event.preventDefault();
 
     try {
-      // Відправляємо дані на сервер за допомогою POST-запиту
-      const response = await fetch('/api/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      // Отримуємо результат від сервера
-      const data = await response.json();
-
-      // Обробляємо результат
-      console.log('Ви увійшли успішно!', data);
+      const response = await axios.post('/api/login', { email, password });
+      console.log('Ви увійшли успішно!', response.data);
+      setRedirectToWelcome(true); // Встановлюємо redirectToWelcome на true після успішної авторизації
     } catch (error) {
-      // Обробка помилок, якщо щось пішло не так при авторизації
-      console.error('Помилка авторизації:', error);
+      console.error('Помилка авторизації:', error.response.data);
     }
   };
+
+  // Якщо redirectToWelcome true, редіректуємо на welcome-back-page
+  if (redirectToWelcome) {
+    return <Redirect to="/welcome-back-page" />;
+  }
 
   return (
     <div className="sign-in-container">
@@ -46,15 +43,7 @@ const SignIn = (props) => {
         <Navbar4 rootClassName="navbar4-root-class-name4"></Navbar4>
       </div>
       <form onSubmit={handleSubmit}>
-        <label>
-          Електронна пошта:
-          <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-        </label>
-        <label>
-          Пароль:
-          <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
-        </label>
-        <button type="submit">Увійти</button>
+        <ContactForm71 setEmail={setEmail} setPassword={setPassword} />
       </form>
       <div className="sign-in-footer11">
         <Footer15 rootClassName="footer15-root-class-name4"></Footer15>
