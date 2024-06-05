@@ -1,0 +1,48 @@
+.logos22-container {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.logos22-max-width {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logos22-text {
+  width: 45%;
+  text-align: center;
+}
+.logos22-logo1 {
+  object-fit: contain;
+}
+.logos22-logo2 {
+  object-fit: contain;
+}
+.logos22-logo3 {
+  object-fit: contain;
+}
+.logos22-logo4 {
+  object-fit: contain;
+}
+.logos22-logo5 {
+  object-fit: contain;
+}
+@media(max-width: 991px) {
+  .logos22-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media(max-width: 767px) {
+  .logos22-container {
+    gap: var(--dl-space-space-twounits);
+  }
+  .logos22-max-width {
+    gap: var(--dl-space-space-twounits);
+  }
+}

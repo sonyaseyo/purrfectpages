@@ -1,0 +1,60 @@
+.app-component-container {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.app-component-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 66px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.app-component-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 66px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.app-component-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 66px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.app-component-image {
+  width: 63px;
+  height: 66px;
+  margin: 0px;
+  object-fit: cover;
+}
+.app-component-text {
+  width: 235px;
+  height: 38px;
+  margin: var(--dl-space-space-unit);
+  font-size: 1.7em;
+  align-self: center;
+  font-style: normal;
+  font-family: "Verdana";
+  font-weight: 700;
+  letter-spacing: auto;
+}
+.app-component-social-links {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+@media(max-width: 479px) {
+  .app-component-social-links {
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,181 @@
+.features22-layout349 {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.features22-max-width {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.features22-container {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+  flex-direction: column;
+}
+.features22-text01 {
+  text-align: center;
+}
+.features22-container1 {
+  width: 100%;
+}
+.features22-card {
+  color: var(--dl-color-theme-neutral-light);
+  height: 500px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary2);
+}
+.features22-image {
+  flex: 1;
+  width: 197px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: square;
+  border-top-left-radius: var(--dl-radius-radius-radius4);
+  border-top-right-radius: var(--dl-radius-radius-radius4);
+  border-bottom-left-radius: var(--dl-radius-radius-radius4);
+  border-bottom-right-radius: var(--dl-radius-radius-radius4);
+}
+.features22-text03 {
+  text-align: center;
+}
+.features22-card1 {
+  color: var(--dl-color-theme-neutral-light);
+  height: 500px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.features22-image1 {
+  flex: 1;
+  width: 167px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.features22-text05 {
+  text-align: center;
+}
+.features22-card2 {
+  color: var(--dl-color-theme-neutral-light);
+  height: 500px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary2);
+}
+.features22-image2 {
+  flex: 1;
+  width: 187px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.features22-text06 {
+  text-align: center;
+}
+.features22-card3 {
+  color: var(--dl-color-theme-neutral-light);
+  height: 500px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.features22-image3 {
+  flex: 1;
+  width: 188px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.features22-text08 {
+  text-align: center;
+}
+.features22-card4 {
+  color: var(--dl-color-theme-neutral-light);
+  height: 500px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.features22-image4 {
+  flex: 0 0 auto;
+  width: 158px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.features22-text10 {
+  text-align: center;
+}
+.features22-card5 {
+  color: var(--dl-color-theme-neutral-light);
+  height: 500px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary2);
+}
+.features22-image5 {
+  width: 152px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.features22-text12 {
+  text-align: center;
+}
+@media(max-width: 991px) {
+  .features22-max-width {
+    flex-direction: column;
+  }
+  .features22-container {
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+}
+@media(max-width: 767px) {
+  .features22-container {
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .features22-card {
+    width: 100%;
+  }
+  .features22-card1 {
+    width: 100%;
+  }
+  .features22-card2 {
+    width: 100%;
+  }
+  .features22-card3 {
+    width: 100%;
+  }
+  .features22-card4 {
+    width: 100%;
+  }
+  .features22-card5 {
+    width: 100%;
+  }
+}
