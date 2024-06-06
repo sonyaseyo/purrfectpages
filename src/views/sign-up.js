@@ -14,15 +14,15 @@ const SignUp = () => {
       .then(response => {
         // Обробка успішної відповіді від сервера
         console.log(response.data);
-        // Редірект на сторінку welcome-back-page.js або іншу, яку ви визначили
-        // Наприклад, ви можете використати об'єкт history з React Router
-        // history.push('/welcome-back-page');
+        // Редірект на сторінку welcome-page.js після успішної реєстрації
+        //props.history.push('/welcome-page');
       })
       .catch(error => {
         // Обробка помилок при відправці даних на сервер
         console.error('Помилка реєстрації:', error);
       });
   };
+  
 
   return (
     <div className="sign-up-container">

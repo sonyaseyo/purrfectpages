@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Redirect } from 'react-router-dom'; // Імпортуємо Redirect
+//import { Redirect } from 'react-router-dom'; // Імпортуємо Redirect
 import Navbar4 from '../components/navbar4';
 import ContactForm71 from '../components/contact-form71';
 import Footer15 from '../components/footer15';
@@ -26,9 +26,9 @@ const SignIn = (props) => {
   };
 
   // Якщо redirectToWelcome true, редіректуємо на welcome-back-page
-  if (redirectToWelcome) {
-    return <Redirect to="/welcome-back-page" />;
-  }
+  //if (redirectToWelcome) {
+  //  return <Redirect to="/welcome-back-page" />;
+  //}
 
   return (
     <div className="sign-in-container">
